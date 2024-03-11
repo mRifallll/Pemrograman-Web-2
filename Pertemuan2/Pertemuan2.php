@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+<form method="post" action="pertemuan_2.php">
     Nama: <input type="text" name="nama" value="<?php echo $nama; ?>"><br><br>
     Jurusan: <input type="text" name="jurusan" value="<?php echo $jurusan; ?>"><br><br>
     Nilai Tugas: <input type="text" name="tugas" value="<?php echo $tugas; ?>"><br><br>
