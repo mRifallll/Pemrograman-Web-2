@@ -4,8 +4,13 @@
     <title>Klasemen Piala Asia U-23</title>
 </head>
 <body>
+    <?php 
+        session_start();
+        $nama = $_SESSION['nama'];
+    ?>
     <h2>Data Group A Piala Asian Qatar U-23</h2>
-    <p> Per <?php echo date("d-m-Y H:i:s"); ?></p>
+    <p> Per <?php echo date("d-m-Y H:i:s");
+    echo "$nama;"?></p>
     <p>Muhammad Rifal Junaidi / 211011401710</p>
     <table border = "1">
         <tr>

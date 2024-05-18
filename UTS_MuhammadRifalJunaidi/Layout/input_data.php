@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Ambil data dari form
 $team = $_POST['negara'];
 $played = $_POST['pertandingan'];
@@ -6,7 +7,7 @@ $won = $_POST['menang'];
 $drawn = $_POST['seri'];
 $lost = $_POST['kalah'];
 $points = $_POST['point'];
-$nama = $_POST['nama'];
+$nama = $_SESSION['nama'];
 $nim = $_POST['nim'];
 $points = $won * 3 + $drawn;
 
